@@ -1,7 +1,7 @@
 {
   "name": "@fixers/gatewayapi-node-api",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Gatewayapi do not have API!",
   "author": "Luca <git@lucacicada.me>",
   "license": "MIT",
