@@ -1,0 +1,48 @@
+{
+  "name": "@fixers/gatewayapi-node-api",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Gatewayapi do not have API!",
+  "author": "Luca <git@lucacicada.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wefixers/gatewayapi-node-api.git"
+  },
+  "keywords": [
+    "Gatewayapi",
+    "api"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepack": "pnpm build"
+  },
+  "dependencies": {
+    "ofetch": "^1.3.3",
+    "ufo": "^1.3.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "1.0.0-beta.27",
+    "@types/node": "^20.8.6",
+    "eslint": "^8.51.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vitest": "^0.34.6"
+  }
+}
